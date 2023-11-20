@@ -1,0 +1,46 @@
+.contact-container {
+    padding: 40px;
+    background-color: #f5f5f5; /* Match the background color to your preference */
+  }
+  
+  .contact-card {
+    max-width: 700px;
+    margin: auto;
+    border: none;
+  }
+  
+  .contact-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .contact-text {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .email-link, .social-link {
+    color: #007bff; /* Bootstrap primary color for links */
+    text-decoration: none;
+  }
+  
+  .email-link:hover, .social-link:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icons {
+    font-size: 2rem; /* Size of the icons */
+    color: #333; /* Color of the icons */
+  }
+  
+  .icon-link {
+    margin-right: 10px; /* Spacing between icons */
+    color: inherit; /* Inherits the color from .social-icons */
+  }
+  
+  .icon-link:hover {
+    color: #007bff; /* Color when hovered */
+  }
+  

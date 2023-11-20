@@ -1,0 +1,81 @@
+/* General styling for the FAQ container */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  /* Styling for the FAQ title */
+  .faq-container h2 {
+    text-align: left;
+    font-size: 24px;
+    color: #5a5a5a;
+    border-bottom: 2px solid #e1e1e1;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for each FAQ item */
+  .faq-item {
+    border-top: 1px solid #e1e1e1;
+    padding: 15px 0;
+  }
+  
+  /* Last item without border-bottom */
+  .faq-item:last-child {
+    border-bottom: 1px solid #e1e1e1;
+  }
+  
+  /* Styling for the FAQ question */
+  .faq-question {
+    background-color: transparent;
+    color: #000;
+    padding: 10px 0;
+    width: 100%;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    transition: font-weight 0.3s ease;
+  }
+  
+  .faq-question:hover,
+  .faq-item.open .faq-question {
+    font-weight: bold; /* Make question bold on hover and when open */
+  }
+  
+  /* Styling for the FAQ answer */
+  .faq-answer {
+    visibility: hidden; /* Hide the answer but maintain layout */
+    max-height: 0; /* Start with max-height 0 */
+    overflow: hidden; /* Prevent content from spilling out */
+    transition: max-height 0.3s ease, visibility 0.3s ease;
+    padding-top: 0;
+    color: #333;
+  }
+  
+  /* Styling for an open FAQ item */
+  .faq-item.open .faq-answer {
+    visibility: visible; /* Make answer visible */
+    max-height: 500px; /* Set a max-height that your content will not exceed */
+    padding-top: 10px; /* Add padding */
+  }
+  
+  .faq-question::before {
+    content: '▶';
+    font-size: 10px;
+    margin-right: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Rotate icon for open questions */
+  .faq-item.open .faq-question::before {
+    transform: rotate(90deg);
+  }
+  
+  /* Ensure the box model includes padding and border in the element's width and height */
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  

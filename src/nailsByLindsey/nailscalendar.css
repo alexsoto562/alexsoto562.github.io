@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif; /* Preferred font family */
+    background-color: #ffe5e5; /* Light pink background */
+}
+
+.timezone-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ff66b2; /* Pink color */
+}
+
+.timezone-container select {
+    margin: 0 10px;
+    border: 1px solid #ff66b2; /* Pink border */
+    background-color: #ffffff; /* White background */
+    color: #ff66b2; /* Pink color */
+}
+
+.calendar-container {
+    display: flex;
+    gap: 10px;
+    background-color: #ffffff; /* White background for container */
+    border-radius: 5px;
+    padding: 10px; /* Adding some padding */
+    box-shadow: 0px 0px 15px #ffc0cb; /* Soft pink shadow */
+}
+
+.calendar-column {
+    border: 1px solid #ff66b2; /* Pink border */
+    width: calc(20% - 10px);  /* Deducting the gap */
+    border-radius: 5px;
+}
+
+.calendar-header, .calendar-day {
+    border-bottom: 1px solid #ff66b2; /* Pink border */
+    padding: 10px;
+    text-align: center;
+    min-height: 50px;  /* Adjust as per requirement */
+}
+
+.calendar-header {
+    font-weight: bold;
+    background-color: #ff66b2; /* Pink background */
+    color: #ffffff; /* White color text */
+    border-bottom: none;  /* Removing the bottom border for the header */
+}
+
+.calendar-day:last-child {
+    border-bottom: none;  /* Removing the bottom border for the last time slot */
+}
+
+.calendar-day:hover {
+    background-color: #ffccdd; /* Lighter pink on hover */
+    cursor: pointer;
+}
+
+.dropdown-option {
+    display: block;
+    padding: 5px 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    font-size: inherit;
+    color: black;
+}
+
+.dropdown-option:hover {
+    background-color: white;
+    border-radius: 50px;
+}
+
+/* To remove the default focus outline */
+.dropdown-option:focus {
+    outline: none;
+   
+}

@@ -1,0 +1,13 @@
+.VideoPlayer {
+    display: flex;
+  }
+  
+  .toc {
+    width: 25%;
+    padding-right: 20px;
+  }
+  
+  .video {
+    width: 5%;
+    height: auto;
+  }

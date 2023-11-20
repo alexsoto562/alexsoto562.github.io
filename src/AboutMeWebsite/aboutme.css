@@ -1,0 +1,98 @@
+/* AboutMe.css */
+.about-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.about-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-heading {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+}
+
+.about-contact a svg {
+  margin-right: 0.5em; 
+}
+
+.about-contact a span {
+  padding-left: 0.5em; 
+}
+
+.about-body {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex; /* This will place all list items in a row */
+  gap: 20px; /* This creates consistent spacing between the items */
+  justify-content: center; /* This will center the icons in the container */
+  align-items: center; /* This will vertically align the icons in case they have different heights */
+}
+
+
+.social-links li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.social-links a {
+  position: relative;
+  display: inline-block;
+}
+
+.social-links a:hover .social-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.social-tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .about-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    padding-right: 0;
+  }
+}

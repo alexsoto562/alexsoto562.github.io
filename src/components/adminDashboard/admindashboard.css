@@ -1,0 +1,50 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.search-input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.card-row-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* might need the top when accordion gets added*/
+  }
+  
+  .card {
+    width: calc(15% - 1rem);
+    margin-bottom: 1rem;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 0.25rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  
+  
+  .card h2 {
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .p-bold-size {
+    font-size: 20px;
+    color: black;
+    line-height: 1.5;
+    font-weight: bold;
+  }
